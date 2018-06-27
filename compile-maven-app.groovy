@@ -8,7 +8,7 @@ pipeline{
 		stage('checkout and compile'){
 			steps{
 				git url: 'https://github.com/DeNReLoaDeD/simple-maven-project-with-tests.git'
-				sh 'mvn clean install -DskipTests'
+				sh 'mvn clean install'
 		     	}
 		}
 		stage('archive'){
